@@ -13,9 +13,17 @@
         android:theme="@style/Theme.PMDM2324"
         tools:targetApi="31">
         <activity
-            android:name=".ut03.u3a2bParaResultado"
-            android:exported="false">
+            android:name=".ut04.ut04a1_Holamundo"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".ut03.u3a2bParaResultado"
+            android:exported="false"></activity>
         <activity
             android:name=".ut03.u3a2aLanza"
             android:exported="true">
