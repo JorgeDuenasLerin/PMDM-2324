@@ -6,13 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".ut04.ut04a1_Holamundo">
 
+    <ImageView
+        android:id="@+id/u4a1idiestrella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/u4a1idf1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a1idiestrella"
+        app:srcCompat="@android:drawable/star_big_on" />
+
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
+        android:id="@+id/u4a1idf1"
         android:name="com.example.pmdm_2324.ut04.ut04f1_Holamundo"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/u4a1idiestrella"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/u4a1idtvcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/u4a1idiestrella"
+        app:layout_constraintTop_toTopOf="@+id/u4a1idiestrella" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

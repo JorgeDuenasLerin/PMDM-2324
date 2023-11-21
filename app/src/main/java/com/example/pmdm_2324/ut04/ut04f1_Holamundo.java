@@ -71,16 +71,37 @@ public class ut04f1_Holamundo extends Fragment {
         tvHola = layout.findViewById(R.id.ut04f1idtvHola);
 
         tvHola.setOnClickListener((v)->{
-            tvHola.setBackgroundColor(
-                    Color.argb(
-                            (int) (Math.random()*COLOR_RANGE),
-                            (int) (Math.random()*COLOR_RANGE),
-                            (int) (Math.random()*COLOR_RANGE),
-                            (int) (Math.random()*COLOR_RANGE)
-                    )
+            int c = Color.argb(
+                    (int) (Math.random()*COLOR_RANGE),
+                    (int) (Math.random()*COLOR_RANGE),
+                    (int) (Math.random()*COLOR_RANGE),
+                    (int) (Math.random()*COLOR_RANGE)
             );
+            tvHola.setBackgroundColor(c);
+
+            if(observer!=null){
+                observer.OnColorChange(c);
+            }
         });
 
         return layout;
+    }
+
+    public void setColor(int a, int r, int g, int b){
+        tvHola.setBackgroundColor(Color.argb(a, r,g,b));
+    }
+
+    public void setText(String msg){
+        tvHola.append(msg);
+    }
+
+    public interface ICambioColor {
+        public void OnColorChange(int c);
+    }
+
+    ICambioColor observer;
+
+    public void setColorChangeListener(ICambioColor elQueRecibe){
+        observer = elQueRecibe;
     }
 }
