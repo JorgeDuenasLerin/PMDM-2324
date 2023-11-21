@@ -30,8 +30,17 @@ public class ut04a1_Holamundo extends AppCompatActivity {
             fragment.setText("Truco de magia con esta cadena mágica");
         });
 
+        //fragment.setColorChangeListener(
+        //     (int c)-> color.setText("Funciona asqueroso" + String.valueOf(c))
+        //);
+
         fragment.setColorChangeListener(
-                (int c)-> color.setText("Funciona asqueroso" + String.valueOf(c))
+                new ut04f1_Holamundo.ICambioColor() {
+                    @Override
+                    public void OnColorChange(int c) {
+                        color.setText("Funciona asqueroso" + String.valueOf(c));
+                    }
+                }
         );
     }
 }
