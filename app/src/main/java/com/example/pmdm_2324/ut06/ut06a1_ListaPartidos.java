@@ -25,7 +25,6 @@ public class ut06a1_ListaPartidos extends AppCompatActivity {
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this.getApplicationContext());
         reyclerViewUser.setLayoutManager(layoutManager);
-
         adapter = new ut06adapter_Partido(ut06Partido.generatePartidos(ut06Partido.PARTIDOS_INICIALES));
         reyclerViewUser.setAdapter(adapter);
 
