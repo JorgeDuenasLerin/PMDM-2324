@@ -13,6 +13,15 @@
         android:theme="@style/Theme.PMDM2324"
         tools:targetApi="31">
         <activity
+            android:name=".ut08.ut08a1_numeroaleatorio"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ut06.ut06a1_ListaPartidos"
             android:exported="true">
             <intent-filter>
@@ -21,7 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ut06.avanzada.EventosClickListas"
             android:exported="true">
@@ -31,7 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ut04.ut04a1_Holamundo"
             android:exported="true">
