@@ -4,6 +4,8 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import java.util.HashMap;
+
 public class ut08a1_numeroaleatorioViewModel extends ViewModel {
     private static final double DELAY = 2000;
     private static final int MAX_NUM = 10000;

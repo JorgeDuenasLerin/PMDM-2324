@@ -44,6 +44,8 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.ViewHo
             producto = (TextView) view.findViewById(R.id.examen_t1_e1_line_producto);
             precio = (TextView) view.findViewById(R.id.examen_t1_e1_line_precio);
             view.setOnClickListener(this);
+            producto.setOnClickListener(this);
+            precio.setOnClickListener(this);
         }
 
         public void setInfo(String nombre, int precio_val) {
